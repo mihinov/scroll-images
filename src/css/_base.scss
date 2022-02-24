@@ -12,11 +12,12 @@
 
 html {
   box-sizing: border-box;
+	user-select: none;
 }
 
 body {
   font-family: var(--default-font);
-  overscroll-behavior: none;
   background-color: #ffffff;
   overflow: hidden;
+	overscroll-behavior: none;
 }
