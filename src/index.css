@@ -1,0 +1,55 @@
+*, *::before, *::after {
+	box-sizing: border-box;
+}
+
+body, h1, p {
+	margin: 0;
+}
+
+.main {
+	overflow: hidden;
+	position: fixed;
+	min-height: 100vh;
+}
+
+.images {
+	height: 200vh;
+}
+
+.images__figure {
+	position: absolute;
+	width: 347.1px;
+	height: 350px;
+}
+
+.images__img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.images__iphone {
+	position: absolute;
+	top: 80%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: -1;
+}
+
+.text-container {
+  position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	top: 0;
+	width: max-content;
+	height: 100%;
+	display: flex;
+	align-items: center;
+}
+
+.text-container__title {
+	font-size: 100px;
+  text-transform: capitalize;
+}

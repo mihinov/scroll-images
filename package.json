@@ -6,6 +6,10 @@
     "gsap": "^3.9.1",
     "smooth-scrollbar": "^8.7.4"
   },
+	"scripts": {
+    "start": "parcel index.html --open",
+    "build": "parcel build index.html --public-url ./"
+  },
   "devDependencies": {
     "@parcel/transformer-sass": "^2.3.2",
     "@parcel/transformer-typescript-tsc": "^2.3.2",
