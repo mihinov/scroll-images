@@ -24,9 +24,18 @@ jobs:
         if: steps.cache-nodemodules.outputs.cache-hit != 'true'
         run: |
           npm ci
+
       - name: Build
         run: |
           npm run build
+
+      - name: Conventional Changelog Action
+        id: changelog
+        uses: TriPSs/conventional-changelog-action@v3
+        with:
+          github-token: ${{ secrets.TOKEN_GITHUB_ACTION }}
+          output-file: "false"
+
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4.2.3
         with:
