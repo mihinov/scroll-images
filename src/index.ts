@@ -5,6 +5,8 @@ import Scrollbar from "smooth-scrollbar";
 
 gsap.registerPlugin(ScrollTrigger);
 
+console.log(1);
+
 const imagesNode = document.querySelector('.images');
 
 window.addEventListener("load", () => {
